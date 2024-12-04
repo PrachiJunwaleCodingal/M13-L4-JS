@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ACT4- Argument objects</title>
+</head>
+
+<body>
+
+    <p>Lets find the largest number</p>
+    <p id="answer"></p>
+    <script>
+        function maxfun() {
+            var max = 0;
+            //arg length is 5 here
+            for (i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("answer").innerHTML = maxfun(20, 16, 25, 24, 30);
+    </script>
+
+</body>
+
+</html>

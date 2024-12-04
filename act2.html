@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Objects Properties</title>
+</head>
+
+<body>
+
+    <h2> Object Properties</h2>
+
+    <p> Use .property or ["property"] to access proprty</p>
+    <p id="text1"></p>
+    <p id="text2"></p>
+
+    <script>
+        var person = { Name: "Prachi", Age: 20 };
+        document.getElementById("text1").innerHTML = "My name is " + person.Name;
+
+        document.getElementById("text2").innerHTML = "My age is " + person["Age"];
+    </script>
+
+</body>
+
+</html>
